@@ -1,7 +1,14 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
+import {fetch} from "next/dist/compiled/@edge-runtime/primitives/fetch";
 
-const articles = () => {
+const articleData = [
+  {
+
+  }
+]
+
+const articles = ({ articles }) => {
   return (
     <div className={styles.maincontainer}>
       <Head>
@@ -80,5 +87,17 @@ const articles = () => {
     </div>
   );
 };
+
+export async function getServerSideProps(context) {
+
+  const articles = await fetch('https://nextjs.org/docs/basic-features/data-fetching/get-server-side-props')
+
+
+  return {
+    props: {
+      articles: articles.json(),
+    }, // will be passed to the page component as props
+  }
+}
 
 export default articles;
