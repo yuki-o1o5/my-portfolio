@@ -1,0 +1,36 @@
+.projects {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.projectsimg {
+  height: 200px;
+  width: 300px;
+  width: 30%;
+}
+
+.textsection {
+  padding-left: 2rem;
+  width: 60%;
+}
+
+.procectsgithubimg {
+  height: 20px;
+  width: 20px;
+}
+.projectscontainer1 {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.projectscontainer2 {
+  display: flex;
+  justify-content: space-between;
+}
+.projectslink {
+  margin: 0;
+}
+.projectsp {
+  color: #787878;
+}

@@ -1,0 +1,14 @@
+.maincontainer {
+  padding: 7em 7em;
+}
+.subcontainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.main {
+  width: 70%;
+}
+.pcommon {
+  color: #787878;
+}

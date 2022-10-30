@@ -1,53 +1,12 @@
 /* common */
 
-.maincontainer {
-  padding: 7em 7em;
-}
 
-.subcontainer {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
 
-.nav{
-  width: 25%;
-}
 
-.navul{
-  padding: 0;
-}
 
-.navli {
-  list-style: none;
-  padding: 1rem 0;
-}
 
-.navli:first-child{
-  padding-top: 0;
-}
 
-.nava:hover {
-  background-color: #cfb865;
-  opacity: 0.7;
-  border-radius: 10px;
-  padding: 0 1rem;
-}
-.nava:focus {
-  background-color: #cfb865;
-  opacity: 0.7;
-  border-radius: 10px;
-  padding: 0 1rem;
-}
-.navicon {
-  display: flex;
-  justify-content:flex-start;
 
-}
-
-.main {
-  width: 70%;
-}
 
 .titleh2 {
   margin: 0;
@@ -57,87 +16,14 @@
   margin: 0;
 }
 
-.namepcommon {
-  color: #787878;
-}
-
 /* home */
 
-.namecontainer {
-  display: flex;
-  justify-content: flex-start;
-}
-
-.nameh1 {
-  font-size: 2em;
-  margin: 0;
-}
-.namep1 {
-  font-size: 1.5em;
-  color: #cfb865;
-}
-
-.nameimg {
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-  margin-left: 1em;
-}
 
 /* about */
-.aboutme {
-  padding: 0;
-}
-.techstack {
-  padding-top: 7rem;
-}
-.techstackparent {
-  padding-top: 2rem;
-  display: flex;
-}
-.techstackimg {
-  margin-right: 1rem;
-  height: 50px;
-  width: 50px;
-}
+
 
 /* projects */
-.projects {
-  margin-top: 2rem;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-.projectsimg {
-  height: 200px;
-  width: 300px;
-  width: 30%;
-}
 
-.textsection {
-  padding-left: 2rem;
-  width: 60%;
-}
-
-.procectsgithubimg {
-  height: 20px;
-  width: 20px;
-}
-.projectscontainer1 {
-  padding-top: 2rem;
-  display: flex;
-  justify-content: space-between;
-}
-.projectscontainer2 {
-  display: flex;
-  justify-content: space-between;
-}
-.projectslink {
-  margin: 0;
-}
-.projectsp {
-  color: #787878;
-}
 
 /* .footer {
   display: flex;

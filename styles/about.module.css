@@ -1,0 +1,11 @@
+.maincontainer {
+  padding: 7em 7em;
+}
+.subcontainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.main {
+  width: 70%;
+}

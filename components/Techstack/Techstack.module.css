@@ -1,0 +1,15 @@
+.techstack {
+  padding-top: 7rem;
+}
+.titleh2 {
+  margin: 0;
+}
+.techstackparent {
+  padding-top: 2rem;
+  display: flex;
+}
+.techstackimg {
+  margin-right: 1rem;
+  height: 50px;
+  width: 50px;
+}

@@ -1,0 +1,33 @@
+.nav {
+  width: 25%;
+}
+
+.navul {
+  padding: 0;
+}
+
+.navli {
+  list-style: none;
+  padding: 1rem 0;
+}
+
+.navli:first-child {
+  padding-top: 0;
+}
+
+.nava:hover {
+  background-color: #cfb865;
+  opacity: 0.7;
+  border-radius: 10px;
+  padding: 0 1rem;
+}
+.nava:focus {
+  background-color: #cfb865;
+  opacity: 0.7;
+  border-radius: 10px;
+  padding: 0 1rem;
+}
+.navicon {
+  display: flex;
+  justify-content: flex-start;
+}

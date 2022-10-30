@@ -1,0 +1,23 @@
+.main {
+  width: 70%;
+}
+.namecontainer {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.nameh1 {
+  font-size: 2em;
+  margin: 0;
+}
+.namep1 {
+  font-size: 1.5em;
+  color: #cfb865;
+}
+
+.nameimg {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  margin-left: 1em;
+}
