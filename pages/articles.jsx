@@ -41,11 +41,13 @@ const articles = ({ posts }) => {
           <Article articletitle={"What isthe"} date={"2022/0909"} />
           <Article articletitle={"What isthe"} date={"2022/0909"} />
           <Article articletitle={"What isthe"} date={"2022/0909"} />
+
           <ul>
             {posts.map((post) => (
               <li>{post.title}</li>
             ))}
           </ul>
+          
         </main>
       </div>
     </div>
