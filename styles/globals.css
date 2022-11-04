@@ -17,7 +17,32 @@ a {
   box-sizing: border-box;
 }
 
+/* add */
+.maincontainer {
+  padding: 7em 7em;
+}
 
+.subcontainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.main {
+  width: 70%;
+}
+
+.titleh2 {
+  margin: 0;
+}
+
+.subtitleh3 {
+  margin: 0;
+}
+
+.pcommon {
+  color: #787878;
+}
 
 @media (prefers-color-scheme: dark) {
   html {

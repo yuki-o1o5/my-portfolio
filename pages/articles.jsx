@@ -4,7 +4,31 @@ import Layout from "../components/Layout/Layout.jsx";
 import Navbar from "../components/Navbar/Navbar.jsx";
 import Article from "../components//Article/Article.jsx";
 
-const articles = () => {
+export async function getStaticProps({ context }) {
+  const res = await fetch("https://dev.to/yukio1o5/posts");
+  const posts = await res.json();
+
+  return {
+    props: { posts },
+    relidate: 10,
+  };
+}
+
+export async function getStaticPaths() {
+  const res = await fetch("https://dev.to/yukio1o5/posts");
+  const posts = await res.json();
+
+  const paths = posts.map((post) => ({
+    params: { id: post.id },
+  }));
+
+  return {
+    paths,
+    fallback: "blocking",
+  };
+}
+
+const articles = ({ posts }) => {
   return (
     <div className={styles.maincontainer}>
       <Layout />
@@ -16,6 +40,11 @@ const articles = () => {
           <Article articletitle={"What isthe"} date={"2022/0909"} />
           <Article articletitle={"What isthe"} date={"2022/0909"} />
           <Article articletitle={"What isthe"} date={"2022/0909"} />
+          <ul>
+            {posts.map((post) => (
+              <li>{post.title}</li>
+            ))}
+          </ul>
         </main>
       </div>
     </div>
