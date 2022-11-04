@@ -6,21 +6,35 @@ import Article from "../components//Article/Article.jsx";
 import axios from "axios";
 
 export async function getStaticProps({ context }) {
-  const res = await axios.get("https://dev.to/yukio1o5/posts");
-  const posts = await res.json();
+  try {
+      const res = await axios.get('https://dev.to/api/articles/me/published', {
+        headers: {
+         'api-key': process.env.DEV_TO_API_KEY
+        }
+      })
 
-  return {
-    props: { posts },
-    relidate: 10,
-  };
+    return {
+      props: { posts: res.data },
+      revalidate: 10,
+    };
+  } catch (e) {
+   console.log(e)
+    return {
+      notFound: true,
+      revalidate: 10,
+    };
+  }
 }
 
 export async function getStaticPaths() {
-  const res = await axios.get("https://dev.to/yukio1o5/posts");
-  const posts = await res.json();
+    const res = await axios.get('https://dev.to/api/articles/me/published', {
+        headers: {
+            'api-key': process.env.DEV_TO_API_KEY
+        }
+    })
 
-  const paths = posts.map((post) => ({
-    params: { id: post.id },
+  const paths = res.data.map((aritcle) => ({
+    params: { id: aritcle.id },
   }));
 
   return {

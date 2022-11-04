@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/projects.module.css";
+// import styles from "../styles/projects.module.css";
 import Layout from "../components/Layout/Layout.jsx";
 import Navbar from "../components/Navbar/Navbar.jsx";
 import Project from "../components//Project/Project.jsx";
@@ -8,7 +8,7 @@ const projects = () => {
   return (
     <div className={styles.maincontainer}>
       <Layout />
-      <div className={styles.subcontainer}>
+      <div className="subcontainer">
         <Navbar />
 
         <main className={styles.main}>
