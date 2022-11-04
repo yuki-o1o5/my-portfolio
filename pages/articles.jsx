@@ -3,9 +3,10 @@ import styles from "../styles/articles.module.css";
 import Layout from "../components/Layout/Layout.jsx";
 import Navbar from "../components/Navbar/Navbar.jsx";
 import Article from "../components//Article/Article.jsx";
+import axios from "axios";
 
 export async function getStaticProps({ context }) {
-  const res = await fetch("https://dev.to/yukio1o5/posts");
+  const res = await axios.get("https://dev.to/yukio1o5/posts");
   const posts = await res.json();
 
   return {
@@ -15,7 +16,7 @@ export async function getStaticProps({ context }) {
 }
 
 export async function getStaticPaths() {
-  const res = await fetch("https://dev.to/yukio1o5/posts");
+  const res = await axios.get("https://dev.to/yukio1o5/posts");
   const posts = await res.json();
 
   const paths = posts.map((post) => ({
