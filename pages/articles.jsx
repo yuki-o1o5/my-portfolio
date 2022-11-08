@@ -5,20 +5,21 @@ import Navbar from "../components/Navbar/Navbar.jsx";
 import Article from "../components//Article/Article.jsx";
 import axios from "axios";
 
-export async function getStaticProps({ context }) {
+export async function getStaticProps({ paths }) {
   try {
-      const res = await axios.get('https://dev.to/api/articles/me/published', {
-        headers: {
-         'api-key': process.env.DEV_TO_API_KEY
-        }
-      })
+    const res = await axios.get("https://dev.to/api/articles/me/published", {
+      headers: {
+        "api-key": process.env.DEV_TO_API_KEY,
+      },
+    });
+    const post = res.data;
 
     return {
-      props: { posts: res.data },
+      props: { post },
       revalidate: 10,
     };
   } catch (e) {
-   console.log(e)
+    console.log(e);
     return {
       notFound: true,
       revalidate: 10,
@@ -26,24 +27,51 @@ export async function getStaticProps({ context }) {
   }
 }
 
-export async function getStaticPaths() {
-    const res = await axios.get('https://dev.to/api/articles/me/published', {
-        headers: {
-            'api-key': process.env.DEV_TO_API_KEY
-        }
-    })
+// export async function getStaticPaths() {
+//   const res = await axios.get(`https://dev.to/api/articles/me/published`, {
+//     headers: {
+//       "api-key": process.env.DEV_TO_API_KEY,
+//     },
+//   });
 
-  const paths = res.data.map((aritcle) => ({
-    params: { id: aritcle.id },
-  }));
+//   const posts = res.data;
+//   console.log(posts);
 
-  return {
-    paths,
-    fallback: "blocking",
-  };
-}
+//   const paths = posts.map((post) => ({
+//     params: {
+//       id: post.id.toString(),
+//     },
+//   }));
 
-const articles = ({ posts }) => {
+//   return {
+//     paths: [],
+//     fallback: "blocking",
+//   };
+// }
+
+// export async function getStaticPaths() {
+//   const url = `https://dev.to/api/articles/me/published`;
+//   const response = await fetch(url, );
+
+//   console.log("responese", response);
+//   const posts = await response;
+//   console.log("hello ", posts);
+
+//   const paths = "";
+
+//   // const paths = posts.map((post) => ({
+//   //   params: {
+//   //     id: post.id.toString(),
+//   //   },
+//   // }));
+
+//   return {
+//     paths: [],
+//     fallback: false,
+//   };
+// }
+
+const articles = ({ post }) => {
   return (
     <div className={styles.maincontainer}>
       <Layout />
@@ -52,16 +80,13 @@ const articles = ({ posts }) => {
 
         <main className={styles.main}>
           <h2 className={styles.titleh2}>My Articles</h2>
-          <Article articletitle={"What isthe"} date={"2022/0909"} />
-          <Article articletitle={"What isthe"} date={"2022/0909"} />
-          <Article articletitle={"What isthe"} date={"2022/0909"} />
+          <Article articletitle={"What is the"} date={"2022/0909"} />
+          <Article articletitle={"What is the"} date={"2022/0909"} />
+          <Article articletitle={"What is the"} date={"2022/0909"} />
 
           <ul>
-            {posts.map((post) => (
-              <li>{post.title}</li>
-            ))}
+            <li>{post.title}</li>
           </ul>
-          
         </main>
       </div>
     </div>
