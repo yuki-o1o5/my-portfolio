@@ -4,18 +4,19 @@ import Layout from "../components/Layout/Layout.jsx";
 import Navbar from "../components/Navbar/Navbar.jsx";
 import Article from "../components//Article/Article.jsx";
 import axios from "axios";
+import { CLIENT_STATIC_FILES_RUNTIME_POLYFILLS_SYMBOL } from "next/dist/shared/lib/constants";
 
-export async function getStaticProps({ paths }) {
+export async function getStaticProps() {
   try {
     const res = await axios.get("https://dev.to/api/articles/me/published", {
       headers: {
         "api-key": process.env.DEV_TO_API_KEY,
       },
     });
-    const post = res.data;
+    const posts = res.data;
 
     return {
-      props: { post },
+      props: { posts },
       revalidate: 10,
     };
   } catch (e) {
@@ -27,27 +28,26 @@ export async function getStaticProps({ paths }) {
   }
 }
 
-export async function getStaticPaths() {
-  const res = await axios.get(`https://dev.to/api/articles/me/published`, {
-    headers: {
-      "api-key": process.env.DEV_TO_API_KEY,
-    },
-  });
+// export async function getStaticPaths() {
+//   const res = await axios.get(`https://dev.to/api/articles/me/published`, {
+//     headers: {
+//       "api-key": process.env.DEV_TO_API_KEY,
+//     },
+//   });
 
-  const posts = res.data;
-  console.log(posts);
+//   const posts = res.data;
 
-  const paths = posts.map((post) => ({
-    params: {
-      id: post.id.toString(),
-    },
-  }));
+//   const paths = posts.map((post) => ({
+//     params: {
+//       id: post,
+//     },
+//   }));
 
-  return {
-    paths: [],
-    fallback: "blocking",
-  };
-}
+//   return {
+//     paths: [],
+//     fallback: "blocking",
+//   };
+// }
 
 // export async function getStaticPaths() {
 //   const url = `https://dev.to/api/articles/me/published`;
@@ -67,7 +67,7 @@ export async function getStaticPaths() {
 //   };
 // }
 
-const articles = ({ post }) => {
+export default function article(props) {
   return (
     <div className={styles.maincontainer}>
       <Layout />
@@ -76,16 +76,22 @@ const articles = ({ post }) => {
 
         <main className={styles.main}>
           <h2 className={styles.titleh2}>My Articles</h2>
-          <Article articletitle={"What is the"} date={"2022/0909"} />
-          <Article articletitle={"What is the"} date={"2022/0909"} />
-          <Article articletitle={"What is the"} date={"2022/0909"} />
 
-          <ul>
-            <li>{post.title}</li>
-          </ul>
+          {/* <Article articletitle={"What is the *****1"} date={"2022/0909"} />
+          <Article articletitle={"What is the *****2"} date={"2022/0909"} />  */}
+
+          <div>
+            {props.posts.map((post, i) => (
+              <Article
+                key={`article-list-${i}`}
+                url={post.url}
+                articletitle={post.title}
+                date={post.published_at}
+              />
+            ))}
+          </div>
         </main>
       </div>
     </div>
   );
-};
-export default articles;
+}

@@ -5,8 +5,10 @@ import styles from "./Article.module.css";
 const Article = (props) => {
   return (
     <div className={styles.article}>
-      <h3>{props.articletitle}</h3>
-      <p>{props.date}</p>
+      <a href={props.url}>
+        <h3>{props.articletitle}</h3>
+        <p>{props.date}</p>
+      </a>
     </div>
   );
 };
