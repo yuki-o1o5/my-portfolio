@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "../styles/articles.module.css";
 import Layout from "../components/Layout/Layout.jsx";
 import Navbar from "../components/Navbar/Navbar.jsx";
 import Article from "../components//Article/Article.jsx";
@@ -69,16 +68,14 @@ export async function getStaticProps() {
 
 export default function article(props) {
   return (
-    <div className={styles.maincontainer}>
+    <div className={"maincontainer"}>
       <Layout />
-      <div className={styles.subcontainer}>
-        <Navbar />
-
-        <main className={styles.main}>
-          <h2 className={styles.titleh2}>My Articles</h2>
-
-          {/* <Article articletitle={"What is the *****1"} date={"2022/0909"} />
-          <Article articletitle={"What is the *****2"} date={"2022/0909"} />  */}
+      <div className={"subcontainer"}>
+        <div className="nav">
+          <Navbar />
+        </div>
+        <main className={"main"}>
+          <h2 className={"titleh2"}>My Articles</h2>
 
           <div>
             {props.posts.map((post, i) => (

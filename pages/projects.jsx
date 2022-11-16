@@ -1,18 +1,18 @@
 import React from "react";
-import styles from "../styles/projects.module.css";
 import Layout from "../components/Layout/Layout.jsx";
 import Navbar from "../components/Navbar/Navbar.jsx";
 import Project from "../components//Project/Project.jsx";
 
 const projects = () => {
   return (
-    <div className={styles.maincontainer}>
+    <div className={"maincontainer"}>
       <Layout />
       <div className="subcontainer">
-        <Navbar />
-
-        <main className={styles.main}>
-          <h2 className={styles.titleh2}>My Projects</h2>
+        <div className="nav">
+          <Navbar />
+        </div>
+        <main className={"main"}>
+          <h2 className={"titleh2"}>My Projects</h2>
           <Project
             projecttitle={"Website1"}
             projecttechstack={"#React #JavaScript #HTML #CSS"}

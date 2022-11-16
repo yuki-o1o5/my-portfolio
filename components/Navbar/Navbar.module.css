@@ -1,7 +1,3 @@
-.nav {
-  width: 25%;
-}
-
 .navul {
   padding: 0;
 }
@@ -27,7 +23,49 @@
   border-radius: 10px;
   padding: 0 1rem;
 }
-.navicon {
-  display: flex;
-  justify-content: flex-start;
+
+.eachicon {
+  color: "#3e3e38";
+}
+
+@media (max-width: 1024px) {
+  .navul {
+    display: flex;
+    justify-content: space-around;
+  }
+  .navli {
+    list-style: none;
+    padding: 0 3em;
+  }
+  .navli:first-child {
+    padding-top: 0;
+  }
+
+  /* html {
+    color-scheme: #3e3e38;
+  }
+  body {
+    color: white;
+    background: black;
+  } */
+}
+
+@media (max-width: 599px) {
+  .navul {
+    display: flex;
+  }
+  .navli {
+    list-style: none;
+    padding: 0 3em;
+  }
+  .navli:first-child {
+    padding-top: 0;
+  }
+  /* html {
+    color-scheme: #3e3e38;
+  }
+  body {
+    color: white;
+    background: black;
+  } */
 }
