@@ -1,20 +1,24 @@
 import React from "react";
+import Image from "next/image";
 import styles from "./Project.module.css";
 
 const Project = (props) => {
   return (
     <div className={styles.project}>
-      <img
+      <Image
         className={styles.projectimg}
-        src="../assets/main3.jpeg#"
+        src="/assets/main3.jpeg#"
         alt="#"
-      ></img>
+        width={300}
+        height={200}
+        objectFit="responsive"
+      />
       <section className={styles.textsection}>
         <h3 className={"subtitleh3"}>{props.projecttitle}</h3>
         <div className={styles.techresoursecontainer}>
           <p className={styles.projectsresourse}>{props.projecttechstack}</p>
           <div className={styles.githublinkcontainer}>
-            <a href="#">
+            <a href="#" target="_blank" rel="noreferrer">
               <i class="fa-brands fa-square-github  fa-lg fa-fw"></i>
             </a>
             <p className={styles.projectslink}>GitHub</p>

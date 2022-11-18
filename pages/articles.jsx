@@ -3,7 +3,6 @@ import Layout from "../components/Layout/Layout.jsx";
 import Navbar from "../components/Navbar/Navbar.jsx";
 import Article from "../components//Article/Article.jsx";
 import axios from "axios";
-import { CLIENT_STATIC_FILES_RUNTIME_POLYFILLS_SYMBOL } from "next/dist/shared/lib/constants";
 
 export async function getStaticProps() {
   try {

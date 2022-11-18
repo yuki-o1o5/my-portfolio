@@ -1,11 +1,10 @@
-import React, { useInsertionEffect, useState } from "react";
-import { unstable_renderSubtreeIntoContainer } from "react-dom";
+import React from "react";
 import styles from "./Article.module.css";
 
 const Article = (props) => {
   return (
     <div className={styles.article}>
-      <a href={props.url}>
+      <a target="_blank" rel="noreferrer" href={props.url}>
         <h3>{props.articletitle}</h3>
         <p className={styles.articledate}>{props.date}</p>
       </a>

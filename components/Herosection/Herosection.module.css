@@ -16,8 +16,6 @@
   color: #cfb865;
 }
 .nameimg {
-  height: 200px;
-  width: 200px;
   border-radius: 50%;
 }
 .pcommon {
@@ -56,11 +54,4 @@
     padding-top: 1em;
     width: 100%;
   }
-  /* html {
-    color-scheme: #3e3e38;
-  }
-  body {
-    color: white;
-    background: black;
-  } */
 }
