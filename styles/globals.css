@@ -34,9 +34,11 @@ a {
 }
 
 .main {
+  width: 80%;
+}
+.adjustmain {
   width: 75%;
 }
-
 .titleh2 {
   margin: 0;
 }
@@ -52,7 +54,7 @@ a {
 .scroll {
   overflow-y: scroll;
   height: 50%;
-  width: 100%;
+  width: 85%;
 }
 
 @media (max-width: 599px) {

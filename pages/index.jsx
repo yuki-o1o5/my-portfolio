@@ -12,7 +12,9 @@ export default function Home() {
           <Navbar />
         </div>
         <main className={"main"}>
-          <Herosection />
+          <div className={"adjustmain"}>
+            <Herosection />
+          </div>
         </main>
       </div>
     </div>

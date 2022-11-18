@@ -14,7 +14,7 @@ const Project = (props) => {
         <div className={styles.techresoursecontainer}>
           <p className={styles.projectsresourse}>{props.projecttechstack}</p>
           <div className={styles.githublinkcontainer}>
-            <a href="#">
+            <a href="#" target="_blank">
               <i class="fa-brands fa-square-github  fa-lg fa-fw"></i>
             </a>
             <p className={styles.projectslink}>GitHub</p>

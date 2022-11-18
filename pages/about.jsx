@@ -14,8 +14,10 @@ export default function About() {
           <Navbar />
         </div>
         <main className={"main"}>
-          <Aboutme />
-          <Techstack />
+          <div className={"adjustmain"}>
+            <Aboutme />
+            <Techstack />
+          </div>
         </main>
       </div>
     </div>
