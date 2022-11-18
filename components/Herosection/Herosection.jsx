@@ -5,9 +5,11 @@ const Herosection = () => {
   return (
     <div>
       <div className={styles.namecontainer}>
-        <section>
+        <section className={styles.herosection}>
           <h1 className={styles.nameh1}>Yuki Kasugai</h1>
-          <p className={styles.namep1}>I'm a Front-End Developer in Vancouver!</p>
+          <p className={styles.namep1}>
+            I'm a Front-End Developer in Vancouver!
+          </p>
         </section>
         <img
           className={styles.nameimg}
@@ -15,26 +17,28 @@ const Herosection = () => {
           alt="yukikasugai"
         ></img>
       </div>
-      <p className={styles.pcommon}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+      <p className={styles.pcommon}>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Vestibulum rhoncus
-        est pellentesque elit ullamcorper dignissim cras tincidunt. In hac</p>
-        <div className={styles.icon}>
-      <a href="https://github.com/yuki-o1o5" target="_blank">
-        <i class="fa-brands fa-square-github fa-2x fa-fw"></i>
-      </a>
-      <a
-        href="https://www.linkedin.com/in/yuki-kasugai-136826247/"
-        target="_blank"
-      >
-        <i class="fa-brands fa-linkedin fa-2x fa-fw"></i>
-      </a>
-      <a href="mailto:sample@sample.com">
-        <i class="fa-solid fa-square-envelope fa-2x fa-fw"></i>
-      </a>
-      <a href="#" target="_blank">
-        <i class="fa-solid fa-square-poll-horizontal  fa-2x fa-fw"></i>
-      </a>
-    </div>
+        est pellentesque elit ullamcorper dignissim cras tincidunt. In hac
+      </p>
+      <div className={styles.icon}>
+        <a href="https://github.com/yuki-o1o5" target="_blank">
+          <i class="fa-brands fa-square-github fa-2x fa-fw"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/yuki-kasugai-136826247/"
+          target="_blank"
+        >
+          <i class="fa-brands fa-linkedin fa-2x fa-fw"></i>
+        </a>
+        <a href="mailto:sample@sample.com">
+          <i class="fa-solid fa-square-envelope fa-2x fa-fw"></i>
+        </a>
+        <a href="#" target="_blank">
+          <i class="fa-solid fa-square-poll-horizontal  fa-2x fa-fw"></i>
+        </a>
+      </div>
     </div>
   );
 };

@@ -1,3 +1,4 @@
+/* all */
 html,
 body {
   padding: 0;
@@ -25,7 +26,7 @@ a {
 .subcontainer {
   display: flex;
   justify-content: space-between;
-  width: 90%;
+  width: 100%;
 }
 
 .nav {
@@ -42,42 +43,38 @@ a {
 
 .subtitleh3 {
   margin: 0;
+  color: #940a13;
 }
 
 .pcommon {
   color: #787878;
 }
+.scroll {
+  overflow-y: scroll;
+  height: 50%;
+  width: 100%;
+}
 
-@media (max-width: 1024px) {
+@media (max-width: 599px) {
   .maincontainer {
-    margin: 3em auto;
+    margin: 2em auto;
   }
   .subcontainer {
-    flex-direction:column;
+    flex-direction: column;
     width: 100%;
   }
   .nav {
     width: 100%;
+    padding: 0 1em;
   }
-  
   .main {
     width: 100%;
+    padding: 3em 2em;
   }
-  /* html {
-    color-scheme: #3e3e38;
+  .subtitleh3 {
+    margin: 0 0 0.5em 0;
   }
-  body {
-    color: white;
-    background: black;
-  } */
-}
-
-@media (max-width: 599px) {
-  /* html {
-    color-scheme: #3e3e38;
+  .scroll {
+    overflow-y: unset;
   }
-  body {
-    color: white;
-    background: black;
-  } */
 }

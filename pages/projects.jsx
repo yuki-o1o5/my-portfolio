@@ -13,20 +13,22 @@ const projects = () => {
         </div>
         <main className={"main"}>
           <h2 className={"titleh2"}>My Projects</h2>
-          <Project
-            projecttitle={"Website1"}
-            projecttechstack={"#React #JavaScript #HTML #CSS"}
-            projectdiscription={
-              "Lorem amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua A diam sollicitudin tempor id eu nisl"
-            }
-          />
-          <Project
-            projecttitle={"Website2"}
-            projecttechstack={"#React #JavaScript #HTML #CSS"}
-            projectdiscription={
-              "Lorem amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua A diam sollicitudin tempor id eu nisl"
-            }
-          />
+          <div className={"scroll"}>
+            <Project
+              projecttitle={"Website1"}
+              projecttechstack={"#React #JavaScript #HTML #CSS"}
+              projectdiscription={
+                "Lorem amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua A diam sollicitudin tempor id eu nisl"
+              }
+            />
+            <Project
+              projecttitle={"Website2"}
+              projecttechstack={"#React #JavaScript #HTML #CSS"}
+              projectdiscription={
+                "Lorem amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua A diam sollicitudin tempor id eu nisl"
+              }
+            />
+          </div>
         </main>
       </div>
     </div>

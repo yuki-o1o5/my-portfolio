@@ -1,6 +1,16 @@
 .article {
-  background-color: #cfb865;
-  opacity: 0.4;
-  padding: 0.5em;
-  margin: 0.5em 0;
+  box-shadow: 2px 2px 4px #787878;
+  -webkit-box-shadow: 0 0 8px #787878(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 8px #787878(0, 0, 0, 0.1);
+  padding: 0.7em;
+  margin: 1em 0;
+  width: 95%;
+}
+.articledate {
+  color: #cfb865;
+}
+@media (max-width: 599px) {
+  .article {
+    width: 100%;
+  }
 }

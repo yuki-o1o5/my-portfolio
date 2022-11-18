@@ -7,7 +7,7 @@ const Article = (props) => {
     <div className={styles.article}>
       <a href={props.url}>
         <h3>{props.articletitle}</h3>
-        <p>{props.date}</p>
+        <p className={styles.articledate}>{props.date}</p>
       </a>
     </div>
   );

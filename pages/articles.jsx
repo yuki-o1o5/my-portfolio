@@ -76,16 +76,17 @@ export default function article(props) {
         </div>
         <main className={"main"}>
           <h2 className={"titleh2"}>My Articles</h2>
-
-          <div>
-            {props.posts.map((post, i) => (
-              <Article
-                key={`article-list-${i}`}
-                url={post.url}
-                articletitle={post.title}
-                date={post.published_at}
-              />
-            ))}
+          <div className={"scroll"}>
+            <div>
+              {props.posts.map((post, i) => (
+                <Article
+                  key={`article-list-${i}`}
+                  url={post.url}
+                  articletitle={post.title}
+                  date={post.published_at}
+                />
+              ))}
+            </div>
           </div>
         </main>
       </div>
