@@ -7,7 +7,7 @@ const Project = (props) => {
     <div className={styles.project}>
       <Image
         className={styles.projectimg}
-        src="/assets/main3.jpeg#"
+        src="/assets/main3.jpeg"
         alt="#"
         width={300}
         height={200}
