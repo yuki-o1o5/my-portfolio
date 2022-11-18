@@ -29,7 +29,7 @@ const Herosection = () => {
         <a
           href="https://www.linkedin.com/in/yuki-kasugai-136826247/"
           target="_blank"
-          rel="noreferrer"
+          rel="noopener"
         >
           <i class="fa-brands fa-linkedin fa-2x fa-fw"></i>
         </a>
