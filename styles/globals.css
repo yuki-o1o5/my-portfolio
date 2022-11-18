@@ -73,10 +73,14 @@ a {
     width: 100%;
     padding: 3em 2em;
   }
+  .adjustmain {
+    width: 100%;
+  }
   .subtitleh3 {
     margin: 0 0 0.5em 0;
   }
   .scroll {
     overflow-y: unset;
+    width: 100%;
   }
 }
