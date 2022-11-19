@@ -16,9 +16,10 @@ const Herosection = () => {
           className={styles.nameimg}
           src="/assets/yukikasugai.jpg"
           alt="yukikasugai"
-          width={200}
-          height={200}
-          objectFit="contain"
+          // width={200}
+          // height={200}
+          layout="responsive"
+          sizes="(min-width: 600px) 405px, 100vw"
         />
       </div>
       <p className={styles.pcommon}>
@@ -28,20 +29,20 @@ const Herosection = () => {
       </p>
       <div className={styles.icon}>
         <a href="https://github.com/yuki-o1o5" target="_blank" rel="noreferrer">
-          <i class="fa-brands fa-square-github fa-2x fa-fw"></i>
+          <i className="fa-brands fa-square-github fa-2x fa-fw"></i>
         </a>
         <a
           href="https://www.linkedin.com/in/yuki-kasugai-136826247/"
           target="_blank"
           rel="noreferrer"
         >
-          <i class="fa-brands fa-linkedin fa-2x fa-fw"></i>
+          <i className="fa-brands fa-linkedin fa-2x fa-fw"></i>
         </a>
         <a href="mailto:sample@sample.com">
-          <i class="fa-solid fa-square-envelope fa-2x fa-fw"></i>
+          <i className="fa-solid fa-square-envelope fa-2x fa-fw"></i>
         </a>
         <a href="#" target="_blank" rel="noreferrer">
-          <i class="fa-solid fa-square-poll-horizontal  fa-2x fa-fw"></i>
+          <i className="fa-solid fa-square-poll-horizontal  fa-2x fa-fw"></i>
         </a>
       </div>
     </div>
