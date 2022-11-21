@@ -7,46 +7,31 @@ const Teckstack = () => {
     <section className={styles.techstack}>
       <h2 className={styles.titleh2}>Tech Stack</h2>
       <div className={styles.techstackparent}>
-        <Image
+        <img
           className={styles.techstackimg}
-          src="/assets/html.png"
+          src="../assets/html.png"
           alt="#"
-          width={50}
-          height={50}
-          objectFit="contain"
-        />
-        <Image
+        ></img>
+        <img
           className={styles.techstackimg}
-          src="/assets/css.png"
+          src="../assets/css.png"
           alt="#"
-          width={50}
-          height={50}
-          objectFit="contain"
-        />
-        <Image
+        ></img>
+        <img
           className={styles.techstackimg}
-          src="/assets/javascript.png"
+          src="../assets/javascript.png"
           alt="#"
-          width={50}
-          height={50}
-          objectFit="contain"
-        />
-        <Image
+        ></img>
+        <img
           className={styles.techstackimg}
-          src="/assets/react.png"
+          src="../assets/react.png"
           alt="#"
-          width={50}
-          height={50}
-          objectFit="contain"
-        />
-        <Image
+        ></img>
+        <img
           className={styles.techstackimg}
-          src="/assets/nextjs.png"
+          src="../assets/nextjs.png"
           alt="#"
-          width={50}
-          height={50}
-          objectFit="contain"
-        />
+        ></img>
       </div>
     </section>
   );

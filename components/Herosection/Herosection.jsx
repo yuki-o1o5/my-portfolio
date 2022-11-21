@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./Herosection.module.css";
-import Image from "next/image";
 
 const Herosection = () => {
   return (
@@ -12,15 +11,11 @@ const Herosection = () => {
             I am a Front-End Developer in Vancouver!
           </p>
         </section>
-        <Image
+        <img
           className={styles.nameimg}
-          src="/assets/yukikasugai.jpg"
+          src="../assets/yukikasugai.jpg"
           alt="yukikasugai"
-          // width={200}
-          // height={200}
-          layout="responsive"
-          sizes="(min-width: 600px) 405px, 100vw"
-        />
+        ></img>
       </div>
       <p className={styles.pcommon}>
         Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod

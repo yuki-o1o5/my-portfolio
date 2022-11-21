@@ -1,18 +1,10 @@
 import React from "react";
-import Image from "next/image";
 import styles from "./Project.module.css";
 
 const Project = (props) => {
   return (
     <div className={styles.project}>
-      <Image
-        className={styles.projectimg}
-        src="/assets/main3.jpeg"
-        alt="#"
-        width={300}
-        height={200}
-        objectFit="responsive"
-      />
+      <img className={styles.projectimg} src="../assets/main3.jpeg" alt="#" />
       <section className={styles.textsection}>
         <h3 className={"subtitleh3"}>{props.projecttitle}</h3>
         <div className={styles.techresoursecontainer}>
