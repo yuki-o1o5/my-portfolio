@@ -8,7 +8,7 @@ const Linkicon = () => {
         <i className="fa-brands fa-square-github fa-2x fa-fw"></i>
       </a>
       <a
-        href="https://www.linkedin.com/in/yuki-kasugai-136826247/"
+        href="https://www.linkedin.com/in/yuki-kasugai/"
         target="_blank"
         rel="noreferrer"
       >
