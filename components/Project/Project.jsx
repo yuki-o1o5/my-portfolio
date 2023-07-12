@@ -12,8 +12,8 @@ const Project = (props) => {
       <div className={styles.project}>
         <img
           className={styles.projectimg}
-          src="../assets/main3.jpeg"
-          alt="project img"
+          src={`../assets/${props.img}`}
+          alt={props.projecttitle}
         />
         <section className={styles.textsection}>
           <h3 className={styles.subtitleh3}>{props.projecttitle}</h3>

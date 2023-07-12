@@ -25,6 +25,7 @@ const projects = () => {
             /> */}
             <Project
               demoUrl={"https://glam-review.vercel.app/"}
+              img={"../assets/gramreview.png"}
               projecttitle={"GramReview"}
               projecttechstack={
                 "#React #Material-UI #Node.js #Express #MongoDB "
@@ -34,6 +35,7 @@ const projects = () => {
             />
             <Project
               demoUrl={"https://yuki-o1o5.github.io/ToDoList/"}
+              img={"../assets/todo.png"}
               projecttitle={"To Do App"}
               projecttechstack={"#React, #ContextApi, #useReducer"}
               githubUrl={"https://github.com/yuki-o1o5/ToDoList"}
@@ -41,6 +43,7 @@ const projects = () => {
             />
             <Project
               demoUrl={"https://quiz-app-gilt-six.vercel.app/"}
+              img={"../assets/quiz.png"}
               projecttitle={"Quiz App"}
               projecttechstack={"React, Material-UI, API"}
               githubUrl={"https://github.com/yuki-o1o5/Quiz-app"}
@@ -48,6 +51,7 @@ const projects = () => {
             />
             <Project
               demoUrl={"https://hacker-news-in-japanese.vercel.app/"}
+              img={"../assets/hackernews.png"}
               projecttitle={"Hacker News in Japanese"}
               projecttechstack={"#Next.js #API"}
               githubUrl={"https://github.com/yuki-o1o5/hacker-news-in-japanese"}
