@@ -12,12 +12,10 @@
 }
 
 .nava:hover {
-  color: #9ebeb9;
-  opacity: 0.7;
+  color: #cfb865;
 }
 .nava:focus {
-  color: #9ebeb9;
-  opacity: 0.7;
+  color: #cfb865;
 }
 
 .eachicon {

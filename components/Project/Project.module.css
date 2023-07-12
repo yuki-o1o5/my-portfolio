@@ -1,11 +1,13 @@
 .project {
   margin-top: 2em;
+  padding: 1.5em 0.7em;
   display: flex;
   justify-content: space-between;
   width: 95%;
 }
 .project:hover {
-  color: #9ebeb9;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 
 .projectimg {
@@ -34,7 +36,7 @@
 }
 .projectsresourse {
   margin: 0;
-  color: #827134;
+  color: #cfb865;
 }
 
 .projectslink {
@@ -48,9 +50,9 @@
 @media (max-width: 599px) {
   .project {
     flex-direction: column;
-    padding: 1.5em 0.7em;
+    /* padding: 1.5em 0.7em;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
-      rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+      rgba(0, 0, 0, 0.08) 0px 0px 0px 1px; */
     width: 100%;
   }
   .projectimg {
