@@ -7,20 +7,21 @@ const Herosection = () => {
       <div className={styles.namecontainer}>
         <section className={styles.herosection}>
           <h1 className={styles.nameh1}>Yuki Kasugai</h1>
-          <p className={styles.namep1}>
-            I am a Front-End Developer in Vancouver!
-          </p>
+          <p className={styles.namep1}>Software Engineer based in Vancouver</p>
         </section>
         <img
           className={styles.nameimg}
-          src="../assets/yukikasugai.jpg"
+          src="../assets/yukiKasugai_portfolio.jpg"
           alt="yukikasugai"
         ></img>
       </div>
       <p className={styles.pcommon}>
-        Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Vestibulum rhoncus
-        est pellentesque elit ullamcorper dignissim cras tincidunt. In hac
+        Hi there! My name is Yuki. I'm a software engineer specializing in
+        front-end.
+        <br />I believe that as a developer, I spend most of my time in a text
+        editor reading code, not just writing it. Therefore, I focus on creating
+        code with logical readability and trackable history, as these aspects
+        can enhance productivity for both me and my collaborators.
       </p>
       <div className={styles.icon}>
         <a href="https://github.com/yuki-o1o5" target="_blank" rel="noreferrer">

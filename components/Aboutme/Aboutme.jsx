@@ -6,13 +6,12 @@ const Aboutme = () => {
     <section className={styles.aboutme}>
       <h2 className={styles.titleh2}>About Me</h2>
       <p className={styles.pcommon}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Vestibulum rhoncus
-        est pellentesque elit ullamcorper dignissim cras tincidunt. In hac
-        habitasse platea dictumst. Massa enim nec dui nunc mattis enim ut
-        tellus. Donec ultrices tincidunt arcu non sodales neque sodales.
-        Placerat in egestas erat imperdiet sed euismod nisi porta lorem. Aliquam
-        id diam maecenas ultricies mi eget mauris pharetra.
+        I'm a software engineer specializing in front-end development, with a
+        strong command of JavaScript, React, with additional experience in
+        working with APIs and databases. I am known for driving projects forward
+        through effective collaboration and strong communication with team
+        members. Passionate about continuous learning and development. I'm
+        excited to tackle complex challenges and bring innovation to the team.
       </p>
     </section>
   );
