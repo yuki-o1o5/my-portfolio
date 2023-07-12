@@ -14,19 +14,44 @@ const projects = () => {
         <main className={"main"}>
           <h2 className={"titleh2"}>My Projects</h2>
           <div className={"scroll"}>
-            <Project
-              projecttitle={"Website1"}
-              projecttechstack={"#React #JavaScript #HTML #CSS"}
-              projectdiscription={
-                "Lorem amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua A diam sollicitudin tempor id eu nisl"
+            {/* <Project
+              demoUrl={"https://e-0922-ja.github.io/expense-tracker-app/"}
+              projecttitle={"SpendShare"}
+              projecttechstack={
+                "#React #TypeScript #Material-UI #Supabase #SendGrid"
               }
+              githubUrl={"https://github.com/e-0922-ja/expense-tracker-app"}
+              projectdiscription={"Online Group Expense Tracker App"}
+            /> */}
+            <Project
+              demoUrl={"https://glam-review.vercel.app/"}
+              projecttitle={"GramReview"}
+              projecttechstack={
+                "#React #Material-UI #Node.js #Express #MongoDB "
+              }
+              githubUrl={"https://github.com/yuki-o1o5/GlamReview"}
+              projectdiscription={"Cosmetic product review App "}
             />
             <Project
-              projecttitle={"Website2"}
-              projecttechstack={"#React #JavaScript #HTML #CSS"}
-              projectdiscription={
-                "Lorem amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua A diam sollicitudin tempor id eu nisl"
-              }
+              demoUrl={"https://yuki-o1o5.github.io/ToDoList/"}
+              projecttitle={"To Do App"}
+              projecttechstack={"#React, #ContextApi, #useReducer"}
+              githubUrl={"https://github.com/yuki-o1o5/ToDoList"}
+              projectdiscription={"To Do App"}
+            />
+            <Project
+              demoUrl={"https://quiz-app-gilt-six.vercel.app/"}
+              projecttitle={"Quiz App"}
+              projecttechstack={"React, Material-UI, API"}
+              githubUrl={"https://github.com/yuki-o1o5/Quiz-app"}
+              projectdiscription={"Quiz App"}
+            />
+            <Project
+              demoUrl={"https://hacker-news-in-japanese.vercel.app/"}
+              projecttitle={"Hacker News in Japanese"}
+              projecttechstack={"#Next.js #API"}
+              githubUrl={"https://github.com/yuki-o1o5/hacker-news-in-japanese"}
+              projectdiscription={"Automatic Japanese translation App"}
             />
           </div>
         </main>
