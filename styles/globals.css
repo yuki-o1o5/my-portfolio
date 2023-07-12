@@ -45,15 +45,13 @@ a {
 
 .subtitleh3 {
   margin: 0;
-  color: #940a13;
 }
 
 .pcommon {
   color: #787878;
 }
 .scroll {
-  overflow-y: scroll;
-  height: 50%;
+  height: 100%;
   width: 85%;
 }
 

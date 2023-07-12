@@ -4,12 +4,20 @@
   justify-content: space-between;
   width: 95%;
 }
+.project:hover {
+  color: #9ebeb9;
+}
+
 .projectimg {
   width: 30%;
 }
 .textsection {
   padding-left: 2rem;
   width: 70%;
+}
+
+.subtitleh3 {
+  margin-top: 1rem;
 }
 .procectsgithubimg {
   height: 20px;
@@ -26,22 +34,23 @@
 }
 .projectsresourse {
   margin: 0;
-  color: #cfb865;
+  color: #827134;
 }
+
 .projectslink {
   margin: 0;
 }
 .projectsp {
   color: #787878;
+  line-height: 1.4rem;
 }
 
 @media (max-width: 599px) {
   .project {
     flex-direction: column;
     padding: 1.5em 0.7em;
-    box-shadow: 0 0 8px #787878;
-    -webkit-box-shadow: 0 0 8px #787878(0, 0, 0, 0.1);
-    -moz-box-shadow: 0 0 8px #787878(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+      rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     width: 100%;
   }
   .projectimg {

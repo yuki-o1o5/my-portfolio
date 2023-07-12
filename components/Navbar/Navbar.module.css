@@ -12,16 +12,12 @@
 }
 
 .nava:hover {
-  background-color: #cfb865;
+  color: #9ebeb9;
   opacity: 0.7;
-  border-radius: 10px;
-  padding: 0 1rem;
 }
 .nava:focus {
-  background-color: #cfb865;
+  color: #9ebeb9;
   opacity: 0.7;
-  border-radius: 10px;
-  padding: 0 1rem;
 }
 
 .eachicon {
