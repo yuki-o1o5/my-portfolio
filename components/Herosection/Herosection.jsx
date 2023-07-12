@@ -16,7 +16,7 @@ const Herosection = () => {
         ></img>
       </div>
       <p className={styles.pcommon}>
-        Hi there! My name is Yuki. I'm a software engineer specializing in
+        Hi there! My name is Yuki. I&aposm a software engineer specializing in
         front-end.
         <br />I believe that as a developer, I spend most of my time in a text
         editor reading code, not just writing it. Therefore, I focus on creating
