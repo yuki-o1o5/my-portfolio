@@ -5,16 +5,21 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <link rel="preconnect" href="https://fonts.googleapis.com" />
-          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-          <link
-            href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Questrial&display=swap"
-            rel="stylesheet"
-          />
-          <link
-            href="https://use.fontawesome.com/releases/v6.2.0/css/all.css"
-            rel="stylesheet"
-          />
+          <>
+            <title>Yuki Kasugai</title>
+            <meta
+              name="description"
+              content="Yuki Kasugai, Software engineer specializing in front-end development"
+            />
+            <link
+              href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+              rel="stylesheet"
+            />
+            <link
+              href="https://use.fontawesome.com/releases/v6.2.0/css/all.css"
+              rel="stylesheet"
+            />
+          </>
         </Head>
         <body>
           <Main />
