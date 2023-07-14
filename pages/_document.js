@@ -6,11 +6,6 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <>
-            <title>Yuki Kasugai</title>
-            <meta
-              name="description"
-              content="Yuki Kasugai, Software engineer specializing in front-end development"
-            />
             <link
               href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
               rel="stylesheet"

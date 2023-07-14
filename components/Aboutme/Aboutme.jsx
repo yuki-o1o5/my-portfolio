@@ -3,17 +3,21 @@ import styles from "./Aboutme.module.css";
 
 const Aboutme = () => {
   return (
-    <section className={styles.aboutme}>
-      <h2 className={styles.titleh2}>About Me</h2>
-      <p className={styles.pcommon}>
-        I&aposm a software engineer specializing in front-end development, with
-        a strong command of JavaScript, React, with additional experience in
-        working with APIs and databases. I am known for driving projects forward
-        through effective collaboration and strong communication with team
-        members. Passionate about continuous learning and development. I&aposm
-        excited to tackle complex challenges and bring innovation to the team.
+    <>
+      <h2 className={styles.aboutme_title}>About Me</h2>
+      <p className={styles.aboutme_description}>
+        As a software engineer, I specialize in front-end development,
+        demonstrating a solid proficiency in JavaScript, React, as well as a
+        keen understanding of APIs and databases. <br />
+        My approach to software development is marked by my ability to drive
+        projects forward, fostered by strong communication skills and effective
+        collaboration with team members. My passion for continuous learning and
+        professional development keeps me prepared to tackle complex challenges,
+        always striving to bring innovative solutions to the team. <br />
+        In essence, I believe my technical acumen, coupled with my interpersonal
+        skills, makes me a valuable contributor to any team.
       </p>
-    </section>
+    </>
   );
 };
 export default Aboutme;

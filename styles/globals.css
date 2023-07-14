@@ -3,8 +3,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "ABeeZee", sans-serif;
-  font-family: "Questrial", sans-serif;
+  font-family: "Roboto Mono", monospace;
   color: #282825;
 }
 

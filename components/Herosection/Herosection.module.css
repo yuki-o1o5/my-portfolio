@@ -1,31 +1,31 @@
-.namecontainer {
+.hero_container {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
-.herosection {
+.hero_title_container {
   width: 90%;
 }
 
-.nameh1 {
+.hero_title {
   font-size: 2em;
   margin: 0;
 }
-.namep1 {
-  font-size: 1.5em;
+.hero_sub_title {
+  font-size: 1.4rem;
   color: #cfb865;
 }
-.nameimg {
+.hero_img {
   border-radius: 50%;
   height: 200px;
   width: 200px;
 }
-.pcommon {
+.intro_description {
   color: #787878;
   line-height: 1.4rem;
   width: 100%;
 }
-.icon {
+.sns_icon_container {
   display: flex;
   justify-content: flex-end;
   padding-top: 2em;
@@ -33,26 +33,26 @@
 }
 
 @media (max-width: 599px) {
-  .namecontainer {
+  .hero_container {
     flex-direction: column;
   }
-  .herosection {
+  .hero_title_container {
     width: 100%;
   }
-  .nameh1 {
+  .title {
     text-align: center;
   }
-  .namep1 {
+  .sub_title {
     text-align: center;
   }
-  .nameimg {
+  .hero_img {
     margin-left: auto;
     margin-right: auto;
   }
-  .pcommon {
+  .intro_description {
     width: 100%;
   }
-  .icon {
+  .sns_icon_container {
     justify-content: center;
     padding-top: 1em;
     width: 100%;

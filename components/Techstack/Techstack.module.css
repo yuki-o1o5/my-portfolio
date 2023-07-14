@@ -1,26 +1,17 @@
-.techstack {
+.techstack_container {
   padding-top: 7rem;
 }
-.titleh2 {
+.techstack_title {
   margin: 0;
 }
-.techstackparent {
+.techstack_img_container {
   padding-top: 2rem;
   display: flex;
-}
-.techstackimg {
-  margin-right: 1rem;
-  height: 50px;
-  width: 50px;
+  gap: 0.1rem;
 }
 
 @media (max-width: 599px) {
-  .techstack {
+  .techstack_container {
     padding-top: 4rem;
-  }
-  .techstackimg {
-    margin-right: 1rem;
-    height: 30px;
-    width: 30px;
   }
 }

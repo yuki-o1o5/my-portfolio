@@ -29,7 +29,9 @@ export async function getStaticProps() {
 export default function article(props) {
   return (
     <div className={"maincontainer"}>
-      <Layout />
+      <Layout
+        content={"Yuki Kasugai, Software engineer. About her articles "}
+      />
       <div className={"subcontainer"}>
         <div className="nav">
           <Navbar />
@@ -37,7 +39,7 @@ export default function article(props) {
         <main className={"main"}>
           <h2 className={"titleh2"}>My Articles</h2>
           <div className={"scroll"}>
-            <div>
+            <>
               {props.posts.map((post, i) => (
                 <Article
                   key={`article-list-${i}`}
@@ -46,7 +48,7 @@ export default function article(props) {
                   date={post.published_at}
                 />
               ))}
-            </div>
+            </>
           </div>
         </main>
       </div>

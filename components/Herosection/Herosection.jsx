@@ -3,27 +3,34 @@ import styles from "./Herosection.module.css";
 
 const Herosection = () => {
   return (
-    <div>
-      <div className={styles.namecontainer}>
-        <section className={styles.herosection}>
-          <h1 className={styles.nameh1}>Yuki Kasugai</h1>
-          <p className={styles.namep1}>Software Engineer based in Vancouver</p>
-        </section>
+    <>
+      <section className={styles.hero_container}>
+        <div className={styles.hero_title_container}>
+          <h1 className={styles.hero_title}>Yuki Kasugai</h1>
+          <p className={styles.hero_sub_title}>
+            Software Engineer based in Vancouver
+          </p>
+        </div>
         <img
-          className={styles.nameimg}
+          className={styles.hero_img}
           src="../assets/yukiKasugai_portfolio.jpg"
           alt="yukikasugai"
         ></img>
-      </div>
-      <p className={styles.pcommon}>
-        Hi there! My name is Yuki. I&aposm a software engineer specializing in
-        front-end.
-        <br />I believe that as a developer, I spend most of my time in a text
-        editor reading code, not just writing it. Therefore, I focus on creating
-        code with logical readability and trackable history, as these aspects
-        can enhance productivity for both me and my collaborators.
+      </section>
+      <p className={styles.intro_description}>
+        Hi there! My name is Yuki. <br />
+        I am a software engineer specializing in front-end.
+        <br />
+        Based on my past experiences, I have come to realize that the time spent
+        reading code is often greater than the time spent writing it.
+        <br />
+        Therefore, I prioritize writing code that is highly readable and easy to
+        trace through the evolution of its changes. <br />
+        By doing so, I aim to enhance productivity for both myself and my
+        collaborators.
       </p>
-      <div className={styles.icon}>
+
+      <section className={styles.sns_icon_container}>
         <a href="https://github.com/yuki-o1o5" target="_blank" rel="noreferrer">
           <i className="fa-brands fa-square-github fa-2x fa-fw"></i>
         </a>
@@ -34,14 +41,11 @@ const Herosection = () => {
         >
           <i className="fa-brands fa-linkedin fa-2x fa-fw"></i>
         </a>
-        <a href="mailto:sample@sample.com">
-          <i className="fa-solid fa-square-envelope fa-2x fa-fw"></i>
-        </a>
         <a href="#" target="_blank" rel="noreferrer">
           <i className="fa-solid fa-square-poll-horizontal  fa-2x fa-fw"></i>
         </a>
-      </div>
-    </div>
+      </section>
+    </>
   );
 };
 

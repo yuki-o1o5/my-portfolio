@@ -1,18 +1,21 @@
-.article {
-  padding: 0.7em;
-  margin: 1em;
+.article_container {
+  padding: 0.7rem;
+  margin: 1rem 0;
   width: 95%;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
     rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
 
-.article:hover {
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, #cfb865 0px 0px 0px 1px;
+.article_container:hover {
+  background-color: #787878;
+  color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px;
 }
 
-.articledate {
+.article_date {
   color: #cfb865;
 }
+
 @media (max-width: 599px) {
   .article {
     width: 100%;

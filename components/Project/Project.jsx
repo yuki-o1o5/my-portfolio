@@ -1,34 +1,30 @@
 import React from "react";
 import styles from "./Project.module.css";
+import Image from "next/image";
 
 const Project = (props) => {
   return (
-    <a
-      className={styles.projectLink}
-      href={props.demoUrl}
-      target="_blank"
-      rel="noreferrer"
-    >
-      <div className={styles.project}>
-        <img
-          className={styles.projectimg}
-          src={`../assets/${props.img}`}
-          alt={props.projecttitle}
-        />
-        <section className={styles.textsection}>
-          <h3 className={styles.subtitleh3}>{props.projecttitle}</h3>
-          <div className={styles.techresoursecontainer}>
-            <p className={styles.projectsresourse}>{props.projecttechstack}</p>
-            <div className={styles.githublinkcontainer}>
-              <a href={props.githubUrl} target="_blank" rel="noreferrer">
-                <i className="fa-brands fa-square-github  fa-lg fa-fw"></i>
-              </a>
-            </div>
-          </div>
-          <p className={styles.projectsp}>{props.projectdiscription}</p>
-        </section>
+    <div className={styles.project_container}>
+      <h2 className={styles.project_title}>{props.projecttitle}</h2>
+      <div className={styles.project_img_link}>
+        <a href={props.demoUrl} target="_blank" rel="noreferrer">
+          <img
+            className={styles.project_img}
+            src={`../assets/${props.img}`}
+            alt={props.projecttitle}
+          />
+        </a>
       </div>
-    </a>
+      <div>
+        <div className={styles.tech_stack_container}>
+          <p className={styles.tech_stack}>{props.projecttechstack}</p>
+        </div>
+        <p className={styles.project_discription}>{props.projectdiscription}</p>
+        <a href={props.githubUrl} target="_blank" rel="noreferrer">
+          <i className="fa-brands fa-square-github fa-2x fa-fw"></i>
+        </a>
+      </div>
+    </div>
   );
 };
 export default Project;
