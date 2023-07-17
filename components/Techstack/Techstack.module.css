@@ -7,11 +7,18 @@
 .techstack_img_container {
   padding-top: 2rem;
   display: flex;
-  gap: 0.1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 @media (max-width: 599px) {
   .techstack_container {
     padding-top: 4rem;
+  }
+  .techstack_img_container {
+    padding-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
   }
 }

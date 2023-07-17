@@ -1,3 +1,7 @@
+.nav {
+  width: 100%;
+}
+
 .navul {
   padding: 0;
 }
@@ -27,13 +31,11 @@
     display: flex;
     justify-content: space-between;
   }
+
   .navli {
-    list-style: none;
-    padding: 0 1rem;
+    padding: 0;
   }
-  .navli:first-child {
-    padding-top: 0;
-  }
+
   /* html {
     color-scheme: #3e3e38;
   }
