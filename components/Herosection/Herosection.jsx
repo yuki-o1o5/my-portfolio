@@ -18,16 +18,17 @@ const Herosection = () => {
         ></img>
       </section>
       <p className={styles.intro_description}>
-        Hi there! My name is Yuki. <br />
-        I am a software engineer specializing in front-end.
+        Hi there! My name is Yuki.
         <br />
-        Based on my past experiences, I have come to realize that the time spent
-        reading code is often greater than the time spent writing it.
+        I am a software engineer specializing in front-end development. My
+        expertise lies in JavaScript, React, as well as in handling APIs and
+        databases.
         <br />
-        Therefore, I prioritize writing code that is highly readable and easy to
-        trace through the evolution of its changes. <br />
-        By doing so, I aim to enhance productivity for both myself and my
-        collaborators.
+        From my experience, I've found that the time spent reading code often
+        surpasses the time spent writing it. This realization has led me to
+        prioritize writing code that is highly readable and easy to trace
+        through its evolution of changes. By doing so, my goal is to enhance
+        productivity for both myself and my collaborators.
       </p>
 
       <section className={styles.sns_icon_container}>
