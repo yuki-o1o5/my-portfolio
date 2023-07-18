@@ -24,7 +24,7 @@ const Herosection = () => {
         expertise lies in JavaScript, React, as well as in handling APIs and
         databases.
         <br />
-        From my experience, I've found that the time spent reading code often
+        From my experience, I have found that the time spent reading code often
         surpasses the time spent writing it. This realization has led me to
         prioritize writing code that is highly readable and easy to trace
         through its evolution of changes. By doing so, my goal is to enhance
