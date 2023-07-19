@@ -21,7 +21,7 @@ const projects = () => {
               img={"../assets/gramreview.png"}
               projecttitle={"GramReview"}
               projecttechstack={
-                "#React #Material-UI #Node.js #Express #MongoDB "
+                "#React #ContextApi #useReducer #Material-UI #Node.js #Express #MongoDB "
               }
               githubUrl={"https://github.com/yuki-o1o5/GlamReview"}
               // projectdiscription={"Cosmetic product review App "}
@@ -30,7 +30,7 @@ const projects = () => {
               demoUrl={"https://yuki-o1o5.github.io/ToDoList/"}
               img={"../assets/todo.png"}
               projecttitle={"To Do App"}
-              projecttechstack={"#React, #ContextApi, #useReducer"}
+              projecttechstack={"#React #TanStack Query #Node.js #Express #SQLite"}
               githubUrl={"https://github.com/yuki-o1o5/ToDoList"}
               // projectdiscription={"To Do App"}
             />
@@ -38,7 +38,7 @@ const projects = () => {
               demoUrl={"https://quiz-app-gilt-six.vercel.app/"}
               img={"../assets/quiz.png"}
               projecttitle={"Quiz App"}
-              projecttechstack={"React, Material-UI, API"}
+              projecttechstack={"#React #Material-UI #API"}
               githubUrl={"https://github.com/yuki-o1o5/Quiz-app"}
               // projectdiscription={"Quiz App"}
             />
