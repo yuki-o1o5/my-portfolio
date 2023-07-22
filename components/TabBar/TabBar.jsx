@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import Link from "next/link";
 import styles from "./TabBar.module.css";
 
-const TabBar = () => {
+const Tabbar = () => {
   const router = useRouter();
 
   return (
@@ -44,4 +44,4 @@ const TabBar = () => {
   );
 };
 
-export default TabBar;
+export default Tabbar;
