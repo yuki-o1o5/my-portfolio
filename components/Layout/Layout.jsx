@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Navbar from "../Navbar/Navbar";
 import Herosection from "../Herosection/Herosection";
-import Tabbar from "../Tabbar/Tabbar";
+import TabBar from "../TabBar/TabBar";
 import styles from "./Layout.module.css";
 
 const Layout = ({ content, children }) => {
@@ -19,7 +19,7 @@ const Layout = ({ content, children }) => {
           <Herosection />
         </section>
         <main className="main_container">
-          <Tabbar />
+          <TabBar />
           {children}
         </main>
       </div>
