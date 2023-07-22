@@ -1,26 +1,53 @@
-import React from "react";
 import Layout from "../components/Layout/Layout.jsx";
-import Navbar from "../components/Navbar/Navbar.jsx";
-import Herosection from "../components/Herosection/Herosection";
+import Project from "../components/ProjectCard/ProjectCard.jsx";
 
-export default function Home() {
+function ProjectsContent() {
   return (
-    <div className={"maincontainer"}>
-      <Layout
-        content={
-          "Yuki Kasugai, Software engineer specializing in front-end development"
-        }
-      />
-      <div className={"subcontainer"}>
-        <div className="nav">
-          <Navbar />
-        </div>
-        <main className={"main"}>
-          <div className={"adjustmain"}>
-            <Herosection />
-          </div>
-        </main>
+    <>
+      <div className={"scroll"}>
+        <Project
+          demoUrl={"https://glam-review.vercel.app/"}
+          img={"../assets/gramreview.png"}
+          projecttitle={"GramReview"}
+          projecttechstack={
+            "#React #ContextApi #useReducer #Material-UI #Node.js #Express #MongoDB "
+          }
+          githubUrl={"https://github.com/yuki-o1o5/GlamReview"}
+          // projectdiscription={"Cosmetic product review App "}
+        />
+        <Project
+          demoUrl={"https://to-do-app-beta-fawn.vercel.app/"}
+          img={"../assets/todo.png"}
+          projecttitle={"To Do App"}
+          projecttechstack={"#React #TanStack Query #Node.js #Express #SQLite"}
+          githubUrl={"https://github.com/yuki-o1o5/To-do-List-with-SQLite"}
+          // projectdiscription={"To Do App"}
+        />
+        <Project
+          demoUrl={"https://quiz-app-gilt-six.vercel.app/"}
+          img={"../assets/quiz.png"}
+          projecttitle={"Quiz App"}
+          projecttechstack={"#React #Material-UI #API"}
+          githubUrl={"https://github.com/yuki-o1o5/Quiz-app"}
+          // projectdiscription={"Quiz App"}
+        />
+        <Project
+          demoUrl={"https://hacker-news-in-japanese.vercel.app/"}
+          img={"../assets/hackernews.png"}
+          projecttitle={"Hacker News in Japanese"}
+          projecttechstack={"#Next.js #API"}
+          githubUrl={"https://github.com/yuki-o1o5/hacker-news-in-japanese"}
+          // projectdiscription={"Automatic Japanese translation App"}
+        />
       </div>
-    </div>
+    </>
+  );
+}
+
+export default function home() {
+  return (
+    <Layout content="Yuki Kasugai, Software engineer specializing in front-end development ">
+      <ProjectsContent />
+    </Layout>
   );
 }

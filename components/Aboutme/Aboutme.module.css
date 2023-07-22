@@ -1,5 +1,9 @@
+.aboutme_container {
+  width: 85%;
+}
+
 .aboutme_title {
-  margin: 0;
+  margin-top: 3rem;
 }
 .aboutme_description {
   color: #787878;

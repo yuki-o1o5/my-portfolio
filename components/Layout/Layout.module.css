@@ -1,0 +1,26 @@
+.app_container {
+  width: 100%;
+  padding: 0 20%;
+}
+
+.hero_section {
+  margin-top: 3rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.main_container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .app_container {
+    padding: 0 4%;
+  }
+  .hero_section {
+    margin-top: 2rem;
+  }
+}

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Project.module.css";
+import styles from "./ProjectCard.module.css";
 import Image from "next/image";
 
 const Project = (props) => {

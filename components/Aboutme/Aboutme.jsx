@@ -3,7 +3,7 @@ import styles from "./Aboutme.module.css";
 
 const Aboutme = () => {
   return (
-    <>
+    <section className={styles.aboutme_container}>
       <h2 className={styles.aboutme_title}>About Me</h2>
       <p className={styles.aboutme_description}>
         As a software engineer, I specialize in front-end development. I
@@ -21,7 +21,7 @@ const Aboutme = () => {
         skills, makes me a valuable contributor to any team.
         <br />
       </p>
-    </>
+    </section>
   );
 };
 export default Aboutme;
