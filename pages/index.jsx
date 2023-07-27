@@ -6,11 +6,22 @@ function ProjectsContent() {
     <>
       <div className={"scroll"}>
         <Project
+          demoUrl={"https://e-0922-ja.github.io/expense-tracker-app"}
+          img={"../assets/spendshare.png"}
+          projecttitle={"SpendShare"}
+          projecttechstack={
+            "#React #TypeScript #Redux-Toolkit #Material-UI #styled component #Supabase #Postgres "
+          }
+          githubUrl={"https://github.com/e-0922-ja/expense-tracker-app"}
+          // projectdiscription={"Cosmetic product review App "}
+        />
+
+        <Project
           demoUrl={"https://glam-review.vercel.app/"}
           img={"../assets/gramreview.png"}
           projecttitle={"GramReview"}
           projecttechstack={
-            "#React #ContextApi #useReducer #Material-UI #Node.js #Express #MongoDB "
+            "#React #ContextApi #useReducer #Material-UI #styled component #Node.js #Express #MongoDB "
           }
           githubUrl={"https://github.com/yuki-o1o5/GlamReview"}
           // projectdiscription={"Cosmetic product review App "}
