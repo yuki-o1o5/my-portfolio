@@ -23,7 +23,11 @@ const Navbar = () => {
             <i className="fa-brands fa-linkedin fa-2x fa-fw"></i>
           </a>
 
-          <a href="#" target="_blank" rel="noreferrer">
+          <a
+            href="/assets/yuki_kasugai_resume.pdf"
+            target="_blank"
+            rel="noreferrer"
+          >
             <i className="fa-solid fa-square-poll-horizontal  fa-2x fa-fw"></i>
           </a>
         </div>
