@@ -24,7 +24,7 @@ const Navbar = () => {
           </a>
 
           <a
-            href="/assets/Yuki_Kasugai_resume.pdf"
+            href="/assets/yuki_kasugai_resume.pdf"
             target="_blank"
             rel="noreferrer"
           >
