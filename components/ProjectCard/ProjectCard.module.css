@@ -34,7 +34,7 @@
 }
 
 .project_img_link:hover {
-  filter: grayscale(100%);
+  background-color: #ecebe5;
 }
 
 .tech_stack_container {
