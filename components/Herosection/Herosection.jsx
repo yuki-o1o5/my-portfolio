@@ -8,9 +8,9 @@ const Herosection = () => {
         <div className={styles.hero_container}>
           <div className={styles.hero_title_container}>
             <h1 className={styles.hero_title}>Yuki Kasugai</h1>
-            <p className={styles.hero_sub_title}>
+            <h2 className={styles.hero_sub_title}>
               Software Engineer based in Vancouver
-            </p>
+            </h2>
           </div>
           <img
             className={styles.hero_img}
@@ -23,9 +23,9 @@ const Herosection = () => {
           <br />
           I am a software engineer specializing in front-end development.
           <br />
-          In my experience, reading code often takes longer than writing it.
-          Thus, I prioritize writing clear, easy-to-trace code to boost
-          productivity for both myself and my team.
+          In my experience, reading code takes more time than writing it, so I
+          focus on creating clear, easily traceable code to improve productivity
+          for my team and me.
         </p>
       </div>
     </>

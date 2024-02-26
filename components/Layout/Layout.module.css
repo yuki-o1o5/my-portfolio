@@ -1,6 +1,8 @@
 .app_container {
   width: 100%;
-  padding: 0 20%;
+  margin: 0 auto;
+  padding: 0 15rem;
+  max-width: 1280px;
 }
 
 .hero_section {
@@ -18,9 +20,22 @@
 
 @media (max-width: 768px) {
   .app_container {
-    padding: 0 4%;
+    padding: 0 !important;
+    margin: 0;
   }
   .hero_section {
     margin-top: 2rem;
+  }
+}
+
+/* @media (max-width: 1024px) {
+  .app_container {
+    padding: 0 4rem;
+  }
+} */
+
+@media (max-width: 1280px) {
+  .app_container {
+    padding: 0 10rem;
   }
 }
