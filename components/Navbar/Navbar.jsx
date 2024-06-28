@@ -22,13 +22,13 @@ const Navbar = () => {
             <i className="fa-brands fa-linkedin fa-2x fa-fw"></i>
           </a>
 
-          <a
+          {/* <a
             href="/assets/yuki_kasugai_software_engineer_resume.pdf"
             target="_blank"
             rel="noreferrer"
           >
             <i className="fa-solid fa-square-poll-horizontal  fa-2x fa-fw"></i>
-          </a>
+          </a> */}
         </div>
       </nav>
     </>
