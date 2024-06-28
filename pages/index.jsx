@@ -65,7 +65,7 @@ function ProjectsContent() {
           techstack={gramReviewTechStack}
           githubUrl={"https://github.com/yuki-o1o5/GlamReview"}
         />
-        <ProjectCard
+        {/* <ProjectCard
           demoUrl={"https://to-do-app-beta-fawn.vercel.app/"}
           subtitle={
             "Full-stack application that helps users manage their tasks efficiently"
@@ -90,7 +90,7 @@ function ProjectsContent() {
           title={"Quiz App"}
           techstack={quizAppTechStack}
           githubUrl={"https://github.com/yuki-o1o5/Quiz-app"}
-        />
+        /> */}
         <ProjectCard
           demoUrl={"https://hacker-news-in-japanese.vercel.app/"}
           subtitle={
